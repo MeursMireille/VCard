@@ -1,3 +1,4 @@
 # VCard
-file:///home/meurs/Repositories/Personal/VCard/index.html
+https://meursmireille.github.io/VCard/
+
 
