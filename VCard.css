@@ -3,51 +3,37 @@
 
 .grid {display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     background-color: rgb(121, 183, 212);
+    height: 50%;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
     }
 
 .header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(35, 81, 165)
+   }
+
+.footer {
+    font-display: center;
     background-color: rgb(35, 81, 165);
-    grid-column: 1 / 4;
-}
-
-.foot {
-    background-color: rgb(121, 183, 212);
     font-family: Arial, Helvetica, sans-serif;
-    grid-column: 1 / 4;
-    text-align: center;    
-      } 
-      .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-
-     .fa-linkedin {
-        background: #007bb5;
-        color: white;
-      }
-      .fa-google {
-        background: #dd4b39;
-        color: white;
-      }
-    
-      .fa-GitHub {
-        background: black;
-        color: white;
-      }
-
-
+    grid-column-start: span 3;
+    font-weight: bold;
+    } 
  
 
 .content {
     background-color: rgb(121, 183, 212);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    grid-column: 1 / 4;
+    grid-column-start: span 3;
+    grid-row: 2;
     }
     
 h6 {
@@ -57,21 +43,83 @@ h6 {
 
 .image {
     background-color: rgb(35, 81, 165); 
-    grid-column: 2 / 3;
-    padding-left: 65px;
-    }
+    grid-column: 2;
+    grid-row: 1;
+}
 
 img {
     max-block-size: 70px; 
     border-radius: 360%;
     border: solid;
     border-color: rgb(121, 183, 212);
+    position: relative;
+    top: 5pt
+    }
+
+.mij {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+}
+
+.een {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.btn1 {
+    background-color:  rgb(35, 81, 165); color: black;
+    font-size: 15px;
+    font-family: arial bold;  
+    height: 30px ; 
+    width:  30px;
+    position: relative;
+    top: 40%;
+    left: 50%;
     
     }
 
+    .btn:link {
+        color:green;        
+    }
 
+    .btn:visited {
+        color: rgb(121, 183, 212);
+    }
 
+    .btn:hover {
+        color: hotpink;
+    }
 
+    .btn:active {
+        color:red;
+    }
 
+    .btn2 {
+        background-color:  rgb(35, 81, 165); color: black;
+        font-size: 15px;
+        font-family: arial bold;  
+        height: 30px ; 
+        width:  30px;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        }
+    
+        .btn:link {
+            color:green;        
+        }
+    
+        .btn:visited {
+            color: rgb(121, 183, 212);
+        }
+    
+        .btn:hover {
+            color: hotpink;
+        }
+    
+        .btn:active {
+            color:red;
+        }
+    
 
 
